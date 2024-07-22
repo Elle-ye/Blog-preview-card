@@ -15,8 +15,6 @@ This is a solution to the [Blog preview card challenge on Frontend Mentor](https
   - [Useful resources](#useful-resources)
 - [Author](#author)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### The challenge
@@ -33,7 +31,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/Elle-ye/Blog-preview-card](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://elle-ye.github.io/Blog-preview-card/](https://your-live-site-url.com)
 
 ## My process
 
