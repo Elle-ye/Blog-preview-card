@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Common Styles */
+@font-face {
+    font-family: 'Figtree';
+    src: url(./assets/fonts/Figtree-VariableFont_wght.ttf);
+}
+
+:root {
+    --spacing-50: 4px;
+    --spacing-100: 8px;
+    --spacing-150: 12px;
+    --spacing-200: 24px;
+    --font-family-: 'Figtree';
+    --white: hsl(0, 0%, 100%);
+    --main-color: hsl(47, 88%, 63%);
+    --text-color-950: hsl(0, 0%, 7%);
+    --text-color-500: hsl(0, 0%, 42%);
+    --font-size-1: 12px;
+    --font-size-2: 14px;
+    --font-size-3: 16px;
+    --font-size-4: 20px;
+    --font-size-5: 24px;
+    --font-weight-100: 500;
+    --font-weight-200: 600;
+    --font-weight-300: 800;
+    --border-ptn4: 4px;
+    --border-1: 10px;
+    --border-2: 20px; 
+}
+
+
+/* Body */
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: var(--font-family-);
+    background-color: var(--main-color);
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5;
+    container-type: size;
+}
+
+/*for the blog container */ 
+.blog {
+    width: 327px;
+    height: 501px;
+    margin: auto;
+    background-color: var(--white);
+    border-radius: var(--border-2);
+    box-shadow: 8px 8px;
+}
+
+/* hero container and image */
+.hero-container {
+    width: 279px;
+    height: 200px;
+    margin: var(--spacing-200);
+}
+
+.blog-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: var(--border-1);
+}
+
+/*Main  Content */
+.content {
+    margin: 0 var(--spacing-200) var(--spacing-200) var(--spacing-200);
+}
+
+/* Button */
+.btn {
+    font-size: var(--font-size-1);
+    background-color: var(--main-color);
+    color: var(--text-color-950);
+    padding: var(--spacing-50) var(--spacing-150);
+    border-radius: var(--border-ptn4);
+    font-weight: var(--font-weight-200);
+    border: none;
+}
+
+
+/* common styles for pub date and main text */
+.pub, .text {
+    font-weight: var(--font-weight-100);
+}
+
+/* Pub date only */
+.pub {
+    color: var(--text-color-950);
+    font-size: var(--font-size-1);
+    padding: var(--spacing-150) 0;
+}
+
+/* Header*/ 
+.header {
+    font-size: var(--font-size-4);
+    font-weight: var(--font-weight-300);
+    color: var(--text-color-950);
+}
+
+.header:hover {
+    cursor: pointer;
+    color: var(--main-color);
+}
+
+a:focus {
+    color: var(--main-color);
+}
+
+.a {
+    text-decoration: none;
+}
+
+/* Text */ 
+.text {
+    color: var(--text-color-500);
+    font-size: var(--font-size-2);
+    padding-top: var(--spacing-150); 
+}
+
+/* Profile */
+.profile-img {
+    width: 32px;
+    height: 32px;
+    margin-left: var(--spacing-200);
+}
+
+.name {
+    color: var(--text-color-950);
+    font-size: var(--font-size-2);
+}
+
+.profile {
+    display: flex;
+    gap: var(--spacing-150);
+    margin-top: var(--spacing-200);
+    align-items: center;
+}
+
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    margin-bottom: var(--spacing-150);
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+/*Container queries*/
+
+@container (width > 500px) {
+    .blog {
+        width: 384px;
+        height: 522px;
+    }
+    
+    .hero-container {
+        width: 336px;
+    }
+
+    .btn, .pub{
+        font-size: var(--font-size-2);
+    }
+
+    .text {
+        font-size: var(--font-size-3);
+    }
+
+    .header {
+        font-size: var(--font-size-5);
+    }
+
+    .attribution {
+        margin-bottom: var(--spacing-50);
+    } 
+}
